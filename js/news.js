@@ -35,43 +35,10 @@ $(document).ready(function () {
         });
     });
 
-
-
-
-
-    // const urlNews = document.querySelectorAll("article");
-    // urlNews.forEach(news =>{
-    //     news.addEventListener("click",(e)=>{
-    //         console.log(e);
-    //         console.log(e.ele);
-            
-    //         const link = e.target.getAttribute("data-rss").value;
-    //         console.log(link);
-            
-    //         // mostrarNoticias(link);
-    //         // alert(link)
-    //     })
-    // })
-    
-    
-    // const newsNY = document.getElementById("newsNY")
-    // newsNY.addEventListener("click", () => {
-    //     mostrarNoticias('https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml');
-    //     console.log(newsNY.getAttribute("data-rss"));
-        
-    // })
-
-
-
     function mostrarNoticias(url) {
         rssUrl = url;
         loadRSS();
     }
-
-
-
-
-
 
     function renderGallery(page) {
         $("#news-gallery").empty();
