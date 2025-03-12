@@ -23,10 +23,11 @@ $(document).ready(function () {
     }
 
     //Enga a coger las url de los data-rss para mostrar las noticias:
-    const cards = document.querySelectorAll("article.card");
-    // console.log(cards);
+    const cards = document.querySelectorAll("li > a");
+     console.log(cards);
     
     cards.forEach((card) => {
+        console.log(1);
         card.addEventListener("click", () => {
             const rssUrl = card.getAttribute("data-rss");
             console.log(`RSS seleccionado: ${rssUrl}`);
@@ -140,8 +141,8 @@ $(document).ready(function () {
                                     <div>${categories}</div>
                                 </div>    
                                 <div class="card-footer text-center">
-                                    <a href="${link}" target="_blank" class="btn btn-primary">Read More</a>
-                                    <button class="btn btn-warning favorite-btn" onclick="addToFavorites('${title}', '${description}', '${imageUrl}', '${link}')">⭐ Favorito</button>
+                                    <a href="${link}" target="_blank" class="btn btn-primary">Saber mas</a>
+                                    <button class="btn btn-warning favorite-btn" onclick="addToFavorites('${title}', '${description}', '${imageUrl}', '${link}')">⭐</button>
                                     </div>    
                             </div>    
                         </div>    
